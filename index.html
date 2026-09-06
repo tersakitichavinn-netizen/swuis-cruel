@@ -3,43 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SWUIS CRUEL — OPEN JOKI</title>
+<title>SWUIS CRUEL — Toko Joki & Produk</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#0f1f14;color:#fff;font-family:Arial;text-align:center;padding:40px 20px}
-.header{margin-bottom:40px}
-.logo{width:90px;height:90px;background:#10b981;border-radius:50%;margin:0 auto 15px;display:flex;align-items:center;justify-content:center;font-size:36px}
-.nama{font-size:26px;font-weight:bold;margin-bottom:10px}
-.verif{background:#10b981;color:#fff;padding:4px 12px;border-radius:20px;font-size:14px;display:inline-block;margin-bottom:15px}
-.desk{color:#b0f0b8;margin-bottom:30px}
-.btn-row{display:grid;gap:12px;max-width:400px;margin:0 auto}
-.btn{background:#1a3b28;border:2px solid #10b981;color:#fff;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:bold;transition:.2s}
-.btn:hover{background:#10b981;color:#000}
+body{background:#0f1f14;color:#fff;font-family:Arial,sans-serif;padding:20px;padding-bottom:80px}
+h1{text-align:center;margin:20px 0;color:#0f8;font-size:22px}
+h2{color:#0f8;margin-bottom:8px;font-size:17px}
+.card{background:#1a2f20;border:2px solid #0a5;border-radius:12px;padding:18px;margin:12px auto;max-width:400px}
+p{color:#ccc;font-size:14px;margin-bottom:6px}
+.harga{color:#0f8;font-weight:bold;font-size:16px;margin:8px 0}
+.btn{display:block;background:#1a3;border:2px solid #0a5;color:#fff;text-align:center;padding:11px;border-radius:8px;text-decoration:none;margin-top:12px;font-weight:bold}
+.btn:hover{background:#0a5;color:#000}
+.menu{position:fixed;bottom:0;left:0;right:0;display:flex;justify-content:space-around;background:#112;padding:10px 0;border-top:2px solid #0a5}
+.menu a{color:#fff;text-decoration:none;text-align:center;font-size:12px}
+.section{display:none}
+.section:target{display:block}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="logo"><img src="https://i.ibb.co/WQYNM68/IMG-20260906-WA0519-1.jpg" alt="PP" style="width:100%;height:100%;border-radius:50%;object-fit:cover">
-</div>
-  <h1 class="nama">SWUIS CRUEL</h1>
-  <div class="verif">✓ WUJUT ASLI — JADI G USAH RAGU AMA GUA LGI 😘</div>
-  <p class="desk">Toko Joki & Produk Digital — Terpercaya & Amanah</p>
-</div><p style="text-align:center;margin:25px 0 10px 0;font-weight:bold;color:#fff;">🔍 SCAN QR DI BAWAH UNTUK PEMBAYARAN 👇</p>
-<img src="https://i.ibb.co/TBK0kQZZ/IMG-20260907-WA0001.jpg" style="display:block;margin:0 auto;width:220px;border-radius:12px;box-shadow:0 0 10px rgba(0,0,0,0.3);">
-<p style="text-align:center;font-size:13px;color:#aaa;margin-top:10px;">Pindai QR pakai DANA / GoPay / OVO / ShopeePay dll.</p>
 
-<div class="btn-row">
-
-<a href="joki.html" class="btn">📋 DAFTAR LAYANAN JOKI</a>
-<a href="harga.html" class="btn">💰 HARGA & PAKET</a>
-<a href="produk.html" class="btn">📦 PRODUK DIGITAL</a>
-<a href="https://wa.me/6283139812954" class="btn">🛒 PESAN SEKARANG</a>
-<a href="https://wa.me/6283139812954" class="btn">💬 KONTAK WA</a>
+<!-- ===== HALAMAN UTAMA ===== -->
+<div id="home" class="section" style="display:block">
+<h1>✅ WUJUT ASLI SWUIS CRUEL</h1>
+<div style="text-align:center;margin:20px 0">
+<p style="color:#0a8;font-size:16px">Toko Joki Kontak & Produk Digital</p>
 </div>
 
+<div style="display:grid;gap:12px;max-width:400px;margin:0 auto">
+<a href="#joki" class="btn">📋 DAFTAR LAYANAN JOKI</a>
+<a href="#harga" class="btn">💰 HARGA & PAKET</a>
+<a href="#produk" class="btn">📦 PRODUK DIGITAL</a>
+<a href="https://wa.me/6283139994330" class="btn" style="background:#1a5">🛒 PESAN SEKARANG</a>
+<a href="https://wa.me/6283139994330" class="btn">💬 KONTAK WA</a>
+</div>
+</div>
 
+<!-- ===== LIST JOKI — SESUAI FORMAT KAMU ===== -->
+<div id="joki" class="section">
+<h1>⚔️ DAFTAR LAYANAN JOKI</h1>
 
+<div class="card">
+<h2>📦 Paket 2K — 1 Hari</h2>
+<p>2.000 kontak selesai 1 hari</p>
+<div class="harga">2.000 Poin</div>
+<a href="https://wa.me/6283139994330" class="btn">PESAN SEKARANG</a>
+</div>
 
+<div class="card">
+<h2>📦 Paket 2K — 3 Hari</h2>
+<p>2.000 kontak selesai 3 hari</p>
+<div class="harga">2.000 Poin</div>
+<a href="https://wa.me/6283139994330" class="btn">PESAN SEKARANG</a>
+</div>
+
+<div class="card">
+<h2>📦 Paket 5K — Cepat</h2>
+<p>5.000 kontak selesai cepat</p>
+<div class="harga">5.000 Poin</div>
+<a href="https://wa.me/6283139994330" class="btn">PESAN SEKARANG</a>
+</div>
+
+<div class="card">
+<h2>🏆 Paket Permanen</h2>
+<p>Terjamin aman tidak hilang</p>
+<div class="harga">Sesuai Jumlah</div>
+<a href="https://wa.me/6283139994330" class="btn">TANYAKAN</a>
+</div>
+</div>
+
+<!-- ===== HARGA & PAKET ===== -->
+<div id="harga" class="section">
+<h1>💰 HARGA & PAKET LENGKAP</h1>
+
+<div class="card">
+<h2>📦 2K Kontak / 1 Hari</h2>
+<p>2.000 kontak — selesai 1 hari kerja</p>
+<div class="harga">2.000 Poin</div>
+<a href="https://wa.me/6283139994330" class="btn">PESAN SEKARANG</a>
+</div>
+
+<div class="card">
+<h2>📦 2K Kontak / 3 Hari</h2>
+<p>2.000 kontak — selesai 3 hari kerja</p>
+<div class="harga">2.000 Poin</div>
+<a href="https://wa.me/6283139994330" class="btn">PESAN SEKARANG</a>
+</div>
+
+<div class="card">
+<h2>⚡ Layanan Cepat Tambahan</h2>
+<p>Percepat pengerjaan sesuai kebutuhan</p>
+<div class="harga">+ Tambah Biaya</div>
+<a href="https://wa.me/6283139994330" class="btn">TANYAKAN</a>
+</div>
+
+<div class="card">
+<h2>🏆 Jaminan Permanen</h2>
+<p>Terjamin aman — kontak tidak hilang</p>
+<div class="harga">Terjamin Kualitas</div>
+<a href="https://wa.me/6283139994330" class="btn">PESAN SEKARANG</a>
+</div>
+</div>
+
+<!-- ===== PRODUK DIGITAL ===== -->
+<div id="produk" class="section">
+<h1>📦 PRODUK DIGITAL</h1>
+
+<div class="card">
+<h2>🎨 Desain PP & Wallpaper</h2>
+<p>Foto profil & wallpaper custom</p>
+<div class="harga">Mulai 500 Poin</div>
+<a href="https://wa.me/6283139994330" class="btn">PESAN SEKARANG</a>
+</div>
+
+<div class="card">
+<h2>📱 Desain Poster & Teks</h2>
+<p>Desain tulisan, logo, dll</p>
+<div class="harga">Bervariasi</div>
+<a href="https://wa.me/6283139994330" class="btn">TANYAKAN DULU</a>
+</div>
+
+<div class="card">
+<h2>🔧 Jasa Lainnya</h2>
+<p>Ada kebutuhan lain? Tanyakan saja!</p>
+<div class="harga">Sesuai Kesepakatan</div>
+<a href="https://wa.me/6283139994330" class="btn">HUBUNGI SAYA</a>
+</div>
+</div>
+
+<!-- ===== MENU BAWAH ===== -->
+<div class="menu">
+<a href="#home">🏠<br>Home</a>
+<a href="#joki">🛡️<br>Joki</a>
+<a href="#harga">💰<br>Harga</a>
+<a href="#produk">📦<br>Produk</a>
+<a href="https://wa.me/6283139994330">💬<br>WA</a>
+</div>
 
 </body>
-</html>
+  </html>
+
