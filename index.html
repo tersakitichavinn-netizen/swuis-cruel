@@ -36,7 +36,7 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 .teks-pilih{text-align:center;color:#00ee77;font-size:18px;font-weight:700;margin-top:12px;padding:10px;background:rgba(0,238,119,.08);border-radius:12px}
 
 .qr-tengah{text-align:center;padding:8px 0}
-.qr-gambar{width:200px;height:200px;border-radius:16px;border:3px solid #00ee77;box-shadow:0 0 20px rgba(0,238,119,.2);object-fit:cover;margin-bottom:14px}
+.qr-gambar{width:200px;height:200px;border-radius:16px;border:3px solid #00ee77;box-shadow:0 0 20px rgba(0,238,119,.2);object-fit:cover;margin-bottom:14px;background:#fff url('https://i.ibb.co.com/j9HwxrNV/qr.jpg') center/cover no-repeat}
 .teks-dana{color:#aaddbb;font-size:14px;line-height:1.7}
 
 .nav-bawah{position:fixed;bottom:0;left:0;right:0;background:rgba(12,26,18,.9);backdrop-filter:blur(12px);border-top:1px solid rgba(0,238,119,.2);display:flex;justify-content:space-around;padding:10px 0;z-index:9}
@@ -55,22 +55,20 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 
 <div id="beranda" class="bagian">
 <div class="profil">
-<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
+<img src="https://i.ibb.co.com/b5kNMvSz/pp.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>WUJUT ASLI SWUIS CRUEL</h1>
 <p class="desc">⚔️ Toko Joki & Produk Terpercaya</p>
 </div>
 
 <a href="#joki" class="tombol">📋 DAFTAR LAYANAN JOKI</a>
-<a href="#deposit" class="tombol biru">💵 DEPOSIT SALDO</a>
 <a href="#apk" class="tombol ungu">📲 DAFTAR APK</a>
 <a href="#bayar" class="tombol">📲 QR PEMBAYARAN</a>
 <a href="https://wa.me/6283139994330" class="tombol" style="background:linear-gradient(90deg,#228877,#33aa88)">💬 HUBUNGI WA</a>
 </div>
 
-<!-- ⚔️ LAYANAN JOKI SUDAH DIUBAH -->
 <div id="joki" class="bagian">
 <div class="profil">
-<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
+<img src="https://i.ibb.co.com/b5kNMvSz/pp.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>📋 LAYANAN JOKI</h1>
 <p class="desc">Pilih paket sesuai kebutuhan</p>
 </div>
@@ -94,35 +92,9 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 </div>
 </div>
 
-<div id="deposit" class="bagian">
-<div class="profil">
-<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
-<h1>💵 DEPOSIT SALDO</h1>
-<p class="desc">Pilih nominal — catat lalu bayar ke DANA</p>
-</div>
-
-<div class="kartu">
-<h2>Pilih Nominal Deposit</h2>
-<div class="grid-nominal">
-<div class="btn-nominal" onclick="pilih(this,'5000')">Rp 5.000</div>
-<div class="btn-nominal" onclick="pilih(this,'10000')">Rp 10.000</div>
-<div class="btn-nominal" onclick="pilih(this,'20000')">Rp 20.000</div>
-<div class="btn-nominal" onclick="pilih(this,'50000')">Rp 50.000</div>
-<div class="btn-nominal" onclick="pilih(this,'100000')">Rp 100.000</div>
-<div class="btn-nominal" onclick="pilih(this,'200000')">Rp 200.000</div>
-</div>
-
-<h2 style="margin-top:20px">Atau Ketik Sendiri</h2>
-<input type="number" id="nilai" class="input-nominal" placeholder="Ketik nominal">
-
-<div id="hasil" class="teks-pilih">— Belum dipilih —</div>
-<p style="text-align:center;margin-top:14px;font-size:13px;color:#668877">✅ Bayar ke DANA: 0831-3999-4330<br>✅ Lalu kirim bukti ke WA</p>
-</div>
-</div>
-
 <div id="apk" class="bagian">
 <div class="profil">
-<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
+<img src="https://i.ibb.co.com/b5kNMvSz/pp.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>📲 DAFTAR APK TERSEDIA</h1>
 <p class="desc">Lihat daftar — tekan beli untuk pesan</p>
 </div>
@@ -130,31 +102,34 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 <div class="kartu">
 <h2>🤖 APK AUTO SV</h2>
 <p>Aplikasi otomatis — kerja instan, gampang dipakai</p>
-<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+AUTO+SV" class="tombol">BELI SEKARANG</a>
+<div class="harga"><em>Rp 2.000</em></div>
+<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+AUTO+SV+2K" class="tombol">BELI SEKARANG</a>
 </div>
 
 <div class="kartu">
 <h2>🐛 APK BUG</h2>
 <p>Fitur khusus — langsung pakai, aman dipakai</p>
-<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+BUG" class="tombol">BELI SEKARANG</a>
+<div class="harga"><em>Rp 20.000</em></div>
+<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+BUG+20K" class="tombol">BELI SEKARANG</a>
 </div>
 
 <div class="kartu">
 <h2>🎬 APK BIOSKOP</h2>
 <p>Nonton film & video lengkap — semua tersedia</p>
-<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+BIOSKOP" class="tombol">BELI SEKARANG</a>
+<div class="harga"><em>Rp 3.000</em></div>
+<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+BIOSKOP+3K" class="tombol">BELI SEKARANG</point>
 </div>
 </div>
 
 <div id="bayar" class="bagian">
 <div class="profil">
-<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
+<img src="https://i.ibb.co.com/b5kNMvSz/pp.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>📲 QR PEMBAYARAN</h1>
 <p class="desc">Scan lalu bayar — kirim bukti ke WA</p>
 </div>
 
 <div class="kartu qr-tengah">
-<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="qr-gambar" alt="QR Pembayaran">
+<div class="qr-gambar"></div>
 <div class="teks-dana">
 <strong>✅ DANA / QRIS — 0831-3999-4330</strong><br>Setelah bayar, simpan bukti lalu kirim ke WA
 </div>
@@ -168,7 +143,6 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 <a href="#beranda" class="aktif">🏠<br>Home</a>
 <a href="#joki">⚔️<br>Joki</a>
 <a href="#apk">📲<br>APK</a>
-<a href="#deposit">💵<br>Deposit</a>
 <a href="#bayar">📲<br>Bayar</a>
 </div>
 
@@ -191,7 +165,8 @@ nilai.addEventListener('input',()=>{
 });
 </script>
 </body>
-                     </html>
+  </html>
+  
   
 
 
