@@ -28,13 +28,6 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 .tombol.ungu{background:linear-gradient(90deg,#7733bb,#9955dd);box-shadow:0 4px 12px rgba(119,51,187,.25)}
 .tombol.ungu:hover{box-shadow:0 6px 18px rgba(119,51,187,.3)}
 
-.grid-nominal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
-.btn-nominal{background:rgba(0,238,119,.08);border:2px solid rgba(0,238,119,.25);color:#fff;padding:10px 6px;border-radius:12px;text-align:center;font-weight:600;font-size:14px;cursor:pointer;transition:.2s}
-.btn-nominal.aktif{background:rgba(0,238,119,.2);border-color:#00ee77;box-shadow:0 0 12px rgba(0,238,119,.2)}
-.input-nominal{width:100%;background:rgba(15,31,20,.6);border:2px solid rgba(0,238,119,.25);border-radius:12px;padding:12px 14px;color:#fff;font-size:16px;margin:10px 0;outline:none;text-align:center}
-.input-nominal:focus{border-color:#00ee77;box-shadow:0 0 8px rgba(0,238,119,.15)}
-.teks-pilih{text-align:center;color:#00ee77;font-size:18px;font-weight:700;margin-top:12px;padding:10px;background:rgba(0,238,119,.08);border-radius:12px}
-
 .qr-tengah{text-align:center;padding:8px 0}
 .qr-gambar{width:200px;height:200px;border-radius:16px;border:3px solid #00ee77;box-shadow:0 0 20px rgba(0,238,119,.2);object-fit:cover;margin-bottom:14px;background:#fff url('https://i.ibb.co.com/j9HwxrNV/qr.jpg') center/cover no-repeat}
 .teks-dana{color:#aaddbb;font-size:14px;line-height:1.7}
@@ -117,7 +110,7 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 <h2>🎬 APK BIOSKOP</h2>
 <p>Nonton film & video lengkap — semua tersedia</p>
 <div class="harga"><em>Rp 3.000</em></div>
-<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+BIOSKOP+3K" class="tombol">BELI SEKARANG</point>
+<a href="https://wa.me/6283139994330?text=Halo+mau+beli+APK+BIOSKOP+3K" class="tombol">BELI SEKARANG</a>
 </div>
 </div>
 
@@ -147,25 +140,29 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 </div>
 
 <script>
-const nilai = document.getElementById('nilai');
-const hasil = document.getElementById('hasil');
+// Smooth scroll dan aktif menu
+const links = document.querySelectorAll('.nav-bawah a');
+const sections = document.querySelectorAll('.bagian');
 
-function pilih(el,val){
-  document.querySelectorAll('.btn-nominal').forEach(b=>b.classList.remove('aktif'));
-  el.classList.add('aktif');
-  nilai.value = val;
-  tampil(val);
-}
-function tampil(v){
-  hasil.textContent = '✅ Nominal: Rp ' + new Intl.NumberFormat('id-ID').format(v||0);
-}
-nilai.addEventListener('input',()=>{
-  document.querySelectorAll('.btn-nominal').forEach(b=>b.classList.remove('aktif'));
-  tampil(nilai.value);
+links.forEach(link => {
+  link.addEventListener('click', function(e) {
+    const target = this.getAttribute('href');
+    if(target.startsWith('#')) {
+      e.preventDefault();
+      document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+window.addEventListener('hashchange', () => {
+  const hash = window.location.hash || '#beranda';
+  links.forEach(l => l.classList.remove('aktif'));
+  document.querySelector(`.nav-bawah a[href="${hash}"]`)?.classList.add('aktif');
 });
 </script>
 </body>
   </html>
+
   
   
 
