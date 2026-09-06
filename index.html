@@ -10,13 +10,11 @@
 body{background:linear-gradient(135deg,#0c1a12 0%,#143020 100%);color:#fff;min-height:100vh;padding:20px;padding-bottom:90px}
 .container{max-width:410px;margin:0 auto}
 
-/* === PROFIL PP === */
 .profil{text-align:center;margin-bottom:28px;padding-top:10px}
 .pp{width:130px;height:130px;border-radius:50%;border:4px solid #00ee77;box-shadow:0 0 24px rgba(0,238,119,.25);object-fit:cover;margin-bottom:12px}
 h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 .desc{color:#8fbb9f;font-size:14px;letter-spacing:.5px}
 
-/* === KOTAK & TOMBOL === */
 .kartu{background:rgba(18,43,28,.7);border:1px solid rgba(0,238,119,.25);border-radius:18px;padding:20px;margin-bottom:14px;box-shadow:0 6px 16px rgba(0,0,0,.25);backdrop-filter:blur(10px)}
 .kartu h2{font-size:17px;font-weight:600;color:#00ee77;margin-bottom:8px}
 .kartu p{font-size:14px;color:#aaddbb;line-height:1.6;margin-bottom:6px}
@@ -30,24 +28,21 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 .tombol.ungu{background:linear-gradient(90deg,#7733bb,#9955dd);box-shadow:0 4px 12px rgba(119,51,187,.25)}
 .tombol.ungu:hover{box-shadow:0 6px 18px rgba(119,51,187,.3)}
 
-/* === DEPOSIT NOMINAL === */
 .grid-nominal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
 .btn-nominal{background:rgba(0,238,119,.08);border:2px solid rgba(0,238,119,.25);color:#fff;padding:10px 6px;border-radius:12px;text-align:center;font-weight:600;font-size:14px;cursor:pointer;transition:.2s}
 .btn-nominal.aktif{background:rgba(0,238,119,.2);border-color:#00ee77;box-shadow:0 0 12px rgba(0,238,119,.2)}
-.input-nominal{width:100%;background:rgba(15,31,20,.6);border:2px solid rgba(0,238,119,.25);border-radius:12px;padding:12px 14px;color:#fff;font-size:16px;margin:10px 0;outline:none}
+.input-nominal{width:100%;background:rgba(15,31,20,.6);border:2px solid rgba(0,238,119,.25);border-radius:12px;padding:12px 14px;color:#fff;font-size:16px;margin:10px 0;outline:none;text-align:center}
 .input-nominal:focus{border-color:#00ee77;box-shadow:0 0 8px rgba(0,238,119,.15)}
+.teks-pilih{text-align:center;color:#00ee77;font-size:18px;font-weight:700;margin-top:12px;padding:10px;background:rgba(0,238,119,.08);border-radius:12px}
 
-/* === QR === */
 .qr-tengah{text-align:center;padding:8px 0}
 .qr-gambar{width:200px;height:200px;border-radius:16px;border:3px solid #00ee77;box-shadow:0 0 20px rgba(0,238,119,.2);object-fit:cover;margin-bottom:14px}
 .teks-dana{color:#aaddbb;font-size:14px;line-height:1.7}
 
-/* === NAVIGASI === */
 .nav-bawah{position:fixed;bottom:0;left:0;right:0;background:rgba(12,26,18,.9);backdrop-filter:blur(12px);border-top:1px solid rgba(0,238,119,.2);display:flex;justify-content:space-around;padding:10px 0;z-index:9}
 .nav-bawah a{text-align:center;color:#779988;text-decoration:none;font-size:11px;padding:6px 4px;border-radius:10px;transition:.2s ease}
 .nav-bawah a.aktif{color:#00ee77;background:rgba(0,238,119,.08)}
 
-/* === BAGIAN HALAMAN === */
 .bagian{display:none;animation:muncul .3s ease}
 .bagian:target{display:block}
 #beranda{display:block}
@@ -58,7 +53,6 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 <body>
 <div class="container">
 
-<!-- 🏠 BERANDA -->
 <div id="beranda" class="bagian">
 <div class="profil">
 <img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
@@ -73,44 +67,42 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 <a href="https://wa.me/6283139994330" class="tombol" style="background:linear-gradient(90deg,#228877,#33aa88)">💬 HUBUNGI WA</a>
 </div>
 
-<!-- ⚔️ LAYANAN JOKI -->
+<!-- ⚔️ LAYANAN JOKI SUDAH DIUBAH -->
 <div id="joki" class="bagian">
 <div class="profil">
+<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>📋 LAYANAN JOKI</h1>
 <p class="desc">Pilih paket sesuai kebutuhan</p>
 </div>
 
 <div class="kartu">
-<h2>📦 2.000 Kontak</h2>
-<p>2.000 kontak aktif — aman & terjamin</p>
-<div class="harga"><em>2K</em> — Selesai dalam 2 Hari</div>
+<h2>⭐ 1K — 1 Hari</h2>
+<div class="harga"><em>1.000</em> — Selesai dalam 1 Hari</div>
+<a href="https://wa.me/6283139994330?text=Halo+pesan+Joki+1K+1H" class="tombol">PESAN SEKARANG</a>
+</div>
+
+<div class="kartu">
+<h2>⭐ 2K — 2 Hari</h2>
+<div class="harga"><em>2.000</em> — Selesai dalam 2 Hari</div>
 <a href="https://wa.me/6283139994330?text=Halo+pesan+Joki+2K+2H" class="tombol">PESAN SEKARANG</a>
 </div>
 
 <div class="kartu">
-<h2>📦 5.000 Kontak</h2>
-<p>5.000 kontak aktif — aman & terjamin</p>
-<div class="harga"><em>5K</em> — Selesai dalam 5 Hari</div>
-<a href="https://wa.me/6283139994330?text=Halo+pesan+Joki+5K+5H" class="tombol">PESAN SEKARANG</a>
-</div>
-
-<div class="kartu">
-<h2>🏆 10.000 Kontak — Permanen</h2>
-<p>10.000 kontak — terjamin selamanya ✅ tidak hilang</p>
-<div class="harga"><em>10K</em> — PERMANEN ✅</div>
+<h2>🏆 10K — PERMANEN ✅</h2>
+<div class="harga"><em>10.000</em> — PERMANEN ✅</div>
 <a href="https://wa.me/6283139994330?text=Halo+pesan+Joki+10K+PERMANEN" class="tombol">PESAN SEKARANG</a>
 </div>
 </div>
 
-<!-- 💵 DEPOSIT SALDO -->
 <div id="deposit" class="bagian">
 <div class="profil">
+<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>💵 DEPOSIT SALDO</h1>
-<p class="desc">Pilih nominal atau ketik sendiri</p>
+<p class="desc">Pilih nominal — catat lalu bayar ke DANA</p>
 </div>
 
 <div class="kartu">
-<h2>Pilih Nominal</h2>
+<h2>Pilih Nominal Deposit</h2>
 <div class="grid-nominal">
 <div class="btn-nominal" onclick="pilih(this,'5000')">Rp 5.000</div>
 <div class="btn-nominal" onclick="pilih(this,'10000')">Rp 10.000</div>
@@ -120,18 +112,19 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 <div class="btn-nominal" onclick="pilih(this,'200000')">Rp 200.000</div>
 </div>
 
-<h2 style="margin-top:20px">Ketik Nominal Sendiri</h2>
-<input type="number" id="nilai" class="input-nominal" placeholder="Contoh: 15000">
-<a id="tautan" href="" class="tombol">✅ LANJUT BAYAR</a>
-<p style="text-align:center;margin-top:10px;font-size:12px;color:#668877">Pembayaran ke DANA 0831-3999-4330</p>
+<h2 style="margin-top:20px">Atau Ketik Sendiri</h2>
+<input type="number" id="nilai" class="input-nominal" placeholder="Ketik nominal">
+
+<div id="hasil" class="teks-pilih">— Belum dipilih —</div>
+<p style="text-align:center;margin-top:14px;font-size:13px;color:#668877">✅ Bayar ke DANA: 0831-3999-4330<br>✅ Lalu kirim bukti ke WA</p>
 </div>
 </div>
 
-<!-- 📲 DAFTAR APK -->
 <div id="apk" class="bagian">
 <div class="profil">
+<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>📲 DAFTAR APK TERSEDIA</h1>
-<p class="desc">Aplikasi siap pakai — langsung beli</p>
+<p class="desc">Lihat daftar — tekan beli untuk pesan</p>
 </div>
 
 <div class="kartu">
@@ -153,9 +146,9 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 </div>
 </div>
 
-<!-- 📲 QR PEMBAYARAN -->
 <div id="bayar" class="bagian">
 <div class="profil">
+<img src="https://i.ibb.co/TBK0kZZ/IMG-20260814-224331-447.jpg" class="pp" alt="SWUIS CRUEL">
 <h1>📲 QR PEMBAYARAN</h1>
 <p class="desc">Scan lalu bayar — kirim bukti ke WA</p>
 </div>
@@ -171,7 +164,6 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 
 </div>
 
-<!-- === MENU BAWAH === -->
 <div class="nav-bawah">
 <a href="#beranda" class="aktif">🏠<br>Home</a>
 <a href="#joki">⚔️<br>Joki</a>
@@ -181,26 +173,27 @@ h1{font-size:22px;font-weight:700;color:#00ee77;margin-bottom:4px}
 </div>
 
 <script>
-const linkAwal = 'https://wa.me/6283139994330?text=Deposit+sebesar+';
 const nilai = document.getElementById('nilai');
-const tautan = document.getElementById('tautan');
+const hasil = document.getElementById('hasil');
 
 function pilih(el,val){
   document.querySelectorAll('.btn-nominal').forEach(b=>b.classList.remove('aktif'));
   el.classList.add('aktif');
   nilai.value = val;
-  gantiLink(val);
+  tampil(val);
 }
-function gantiLink(v){
-  tautan.href = linkAwal + encodeURIComponent('Rp '+new Intl.NumberFormat('id-ID').format(v||0));
+function tampil(v){
+  hasil.textContent = '✅ Nominal: Rp ' + new Intl.NumberFormat('id-ID').format(v||0);
 }
 nilai.addEventListener('input',()=>{
   document.querySelectorAll('.btn-nominal').forEach(b=>b.classList.remove('aktif'));
-  gantiLink(nilai.value);
+  tampil(nilai.value);
 });
 </script>
 </body>
-  </html>
+                     </html>
+  
+
 
 
 
