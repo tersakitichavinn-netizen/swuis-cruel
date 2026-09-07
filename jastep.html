@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JASTEP — REAL KHA HOSTING</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#000;color:#fff;min-height:100vh;padding:20px}
+.container{max-width:420px;margin:0 auto}
+
+.header{background:#1a1a1a;border:1px solid #333;border-radius:16px;padding:20px;margin-bottom:20px}
+.email-top{background:#2a2a2a;border-radius:10px;padding:12px;margin-bottom:15px;font-size:15px;color:#ffd700}
+
+.btn-update{width:100%;background:linear-gradient(90deg,#ffd700,#ffb300);border:none;border-radius:12px;padding:15px;font-size:16px;font-weight:bold;color:#000;cursor:pointer;margin-bottom:25px}
+
+.box-form{background:#1a1a1a;border:1px solid #333;border-radius:16px;padding:20px;margin-bottom:20px}
+.judul{display:flex;align-items:center;gap:10px;margin-bottom:15px}
+.icon-mail{width:40px;height:40px;background:#ffd700;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#000;font-weight:bold;font-size:20px}
+h2{font-size:18px;color:#ffd700}
+
+.input-group{display:flex;gap:10px;margin-bottom:15px}
+input[type="email"]{flex:1;background:#2a2a2a;border:1px solid #444;border-radius:10px;padding:12px;color:#fff;font-size:15px}
+input[type="number"]{width:80px;background:#2a2a2a;border:1px solid #444;border-radius:10px;padding:12px;color:#fff;font-size:15px;text-align:center}
+
+.btn-add{width:100%;background:linear-gradient(90deg,#ffd700,#ffb300);border:none;border-radius:12px;padding:14px;font-size:16px;font-weight:bold;color:#000;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px}
+
+.daftar{margin-top:25px}
+.daftar-header{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #333;margin-bottom:10px}
+.daftar-item{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid #222;font-size:14px}
+.limit{color:#ffd700;font-weight:bold}
+
+.footer{text-align:center;margin-top:40px;color:#666;font-size:13px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<div class="email-top">kha@zakha.com</div>
+<button class="btn-update">🔄 Update Data System</button>
+</div>
+
+<div class="box-form">
+<div class="judul">
+<div class="icon-mail">✉</div>
+<h2>Tambah Email</h2>
+</div>
+<div class="input-group">
+<input type="email" id="emailInput" placeholder="Masukkan Email...">
+<input type="number" id="limitInput" value="100" min="1">
+</div>
+<button class="btn-add" onclick="tambahEmail()">➕ Add Email</button>
+</div>
+
+<div class="daftar">
+<div class="daftar-header">
+<span>L</span>
+<span class="limit">LIMIT</span>
+</div>
+<div id="listEmail">
+<div class="daftar-item">
+<span>jltanalfariz123@gmail.com</span>
+<span class="limit">110</span>
+</div>
+<div class="daftar-item">
+<span>fallzffgacor@gmail.com</span>
+<span class="limit">33</span>
+</div>
+</div>
+</div>
+
+<div class="footer">© 2026 REAL KHA HOSTING</div>
+
+</div>
+
+<script>
+function tambahEmail(){
+  const email = document.getElementById('emailInput').value.trim()
+  const limit = document.getElementById('limitInput').value
+
+  if(!email){
+    alert('Masukkan email dulu bos!')
+    return
+  }
+
+  const list = document.getElementById('listEmail')
+  const item = document.createElement('div')
+  item.className = 'daftar-item'
+  item.innerHTML = `<span>${email}</span><span class="limit">${limit}</span>`
+  list.appendChild(item)
+
+  document.getElementById('emailInput').value = ''
+  document.getElementById('limitInput').value = '100'
+}
+</script>
+
+</body>
+  </html>
+  
