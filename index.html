@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DO><!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
@@ -12,6 +12,8 @@
   --hijau:#84cc16;
   --hijauGelap:#1a2f20;
   --merah:#ef4444;
+  --biru:#3b82f6;
+  --ungu:#a855f7;
 }
 body{
   font-family:'Poppins',sans-serif;
@@ -34,7 +36,8 @@ body{
 }
 .bagian-judul{
   color:#bef264;font-weight:700;font-size:16px;margin-bottom:15px;
-  padding-bottom:8px;border-bottom:1px solid #2a4530
+  padding-bottom:8px;border-bottom:1px solid #2a4530;
+  display:flex;align-items:center;gap:8px
 }
 .item{
   display:flex;justify-content:space-between;align-items:center;
@@ -76,12 +79,12 @@ body{
 
 <div class="container">
 
-<!-- HEADER DENGAN PP BARU -->
+<!-- HEADER -->
 <div class="header">
   <img src="https://i.ibb.co/Y4XJWYgK/IMG-20260909-WA0239.jpg" alt="SWUIS CRUEL" class="header-img">
   <div class="header-info">
     <h1>SWUIS CRUEL <span class="centang">✔</span></h1>
-    <p>Pusat Layanan SwuisCruel</p>
+    <p>Pusat Layanan Terlengkap & Terpercaya</p>
   </div>
 </div>
 
@@ -98,32 +101,17 @@ body{
 <!-- BUY APK -->
 <div class="bagian">
   <h3 class="bagian-judul">📦 BUY APK</h3>
-  <div class="item">
-    <span class="item-nama">APK Permanen</span>
-    <span class="item-harga">Rp 25.000</span>
-  </div>
-  <div class="item">
-    <span class="item-nama">APK SV Otomatis</span>
-    <span class="item-harga">Rp 2.000</span>
-  </div>
-  <div class="item">
-    <span class="item-nama">APK SAPM OTP V1</span>
-    <span class="item-harga">Rp 2.000</span>
-  </div>
+  <div class="item"><span class="item-nama">APK Permanen</span><span class="item-harga">Rp 25.000</span></div>
+  <div class="item"><span class="item-nama">APK SV Otomatis</span><span class="item-harga">Rp 2.000</span></div>
+  <div class="item"><span class="item-nama">APK SAPM OTP V1</span><span class="item-harga">Rp 2.000</span></div>
   <a href="https://wa.me/6283139994330?text=Halo%20Saya%20Beli%20APK" class="tombol-pesan">💬 Beli APK</a>
 </div>
 
 <!-- WEB JASTEP -->
 <div class="bagian">
   <h3 class="bagian-judul">🌐 WEB JASTEP</h3>
-  <div class="item">
-    <span class="item-nama">Jastep</span>
-    <span class="item-harga">Rp 5.000</span>
-  </div>
-  <div class="item">
-    <span class="item-nama">PT Jastep</span>
-    <span class="item-harga">Rp 10.000</span>
-  </div>
+  <div class="item"><span class="item-nama">Jastep</span><span class="item-harga">Rp 5.000</span></div>
+  <div class="item"><span class="item-nama">PT Jastep</span><span class="item-harga">Rp 10.000</span></div>
   <a href="https://wa.me/6283139994330?text=Halo%20Saya%20Pesan%20Web%20Jastep" class="tombol-pesan">💬 Pesan Jastep</a>
 </div>
 
@@ -143,11 +131,33 @@ body{
   <a href="https://wa.me/6283139994330?text=Halo%20Saya%20Pesan%20Suntik%20SL" class="tombol-pesan">💬 Pesan Suntik</a>
 </div>
 
+<!-- JASA SOSMED TAMBAHAN -->
+<div class="bagian">
+  <h3 class="bagian-judul">📱 JASA SOSMED LAINNYA</h3>
+  <div class="item"><span class="item-nama">Suntik Like / Suka</span><span class="item-harga">Mulai Rp 500</span></div>
+  <div class="item"><span class="item-nama">Suntik Views / Penonton</span><span class="item-harga">Mulai Rp 1.000</span></div>
+  <div class="item"><span class="item-nama">Komentar Custom</span><span class="item-harga">Tanya Admin</span></div>
+  <div class="item"><span class="item-nama">Centang Biru Verifikasi</span><span class="item-harga">Tanya Admin</span></div>
+  <div class="item"><span class="item-nama">Pulihkan Akun Sosmed</span><span class="item-harga">Rp 5.000</span></div>
+  <a href="https://wa.me/6283139994330?text=Halo%20Saya%20Tanya%20Jasa%20Sosmed" class="tombol-pesan">💬 Tanya Detail</a>
+</div>
+
+<!-- TOP UP GAME -->
+<div class="bagian">
+  <h3 class="bagian-judul">🎮 TOP UP GAME</h3>
+  <div class="item"><span class="item-nama">Diamond MLBB</span><span class="item-harga">Mulai Rp 3.000</span></div>
+  <div class="item"><span class="item-nama">DM FF</span><span class="item-harga">Mulai Rp 2.500</span></div>
+  <div class="item"><span class="item-nama">UC PUBG</span><span class="item-harga">Mulai Rp 5.000</span></div>
+  <div class="item"><span class="item-nama">Koin Higgs Domino</span><span class="item-harga">Mulai Rp 10.000</span></div>
+  <div class="item"><span class="item-nama">Joki Rank / Naik Bintang</span><span class="item-harga">Mulai Rp 5.000</span></div>
+  <a href="https://wa.me/6283139994330?text=Halo%20Saya%20TopUp%20Game" class="tombol-pesan">💬 Top Up Sekarang</a>
+</div>
+
 <!-- JPM -->
 <div class="bagian">
   <h3 class="bagian-judul">🎰 JPM</h3>
   <div class="item">
-    <span class="item-nama">JPM</span>
+    <span class="item-nama">JPM / JP / Maxwin</span>
     <span class="item-harga">Tanya Admin</span>
   </div>
   <a href="https://wa.me/6283139994330?text=Halo%20Saya%20Tanya%20JPM" class="tombol-pesan">💬 Tanya Admin</a>
@@ -163,7 +173,17 @@ body{
   <a href="https://wa.me/6283139994330?text=Halo%20Saya%20Beli%20APK%20Bug" class="tombol-pesan">💬 Beli APK Bug</a>
 </div>
 
-<!-- QR PEMBAYARAN DENGAN QR BARU -->
+<!-- JASA TEKNIS & DESAIN -->
+<div class="bagian">
+  <h3 class="bagian-judul">🛠️ JASA LAINNYA</h3>
+  <div class="item"><span class="item-nama">Perbaiki WA / Pulihkan Akun</span><span class="item-harga">Rp 5.000</span></div>
+  <div class="item"><span class="item-nama">Bikin Website / Toko Online</span><span class="item-harga">Mulai Rp 15.000</span></div>
+  <div class="item"><span class="item-nama">Edit Foto / PP / Desain</span><span class="item-harga">Mulai Rp 2.000</span></div>
+  <div class="item"><span class="item-nama">Tukar Saldo E-Wallet</span><span class="item-harga">Sesuai Nominal</span></div>
+  <a href="https://wa.me/6283139994330?text=Halo%20Saya%20Pesan%20Jasa%20Lainnya" class="tombol-pesan">💬 Pesan Jasa</a>
+</div>
+
+<!-- QR PEMBAYARAN -->
 <div class="bayar-kotak">
   <h3 style="font-size:18px;font-weight:700;margin-bottom:10px">💳 Pembayaran</h3>
   <img src="https://i.ibb.co/TMX6MYhG/IMG-20260909-WA0238.jpg" alt="QR Pembayaran" class="qr-img">
@@ -175,15 +195,16 @@ body{
 
 <!-- NAVIGASI BAWAH -->
 <div class="nav-bawah">
-  <a href="#" class="nav-item aktif"><span class="nav-icon">🛡️</span>Joki</a>
+  <a href="#" class="nav-item aktif"><span class="nav-icon">🏠</span>Beranda</a>
+  <a href="#sosmed" class="nav-item"><span class="nav-icon">📱</span>Sosmed</a>
+  <a href="#game" class="nav-item nav-tengah">Game</a>
   <a href="#apk" class="nav-item"><span class="nav-icon">📦</span>APK</a>
-  <a href="#" class="nav-item nav-tengah">Home</a>
-  <a href="#suntik" class="nav-item"><span class="nav-icon">📈</span>Suntik</a>
-  <a href="#tentang" class="nav-item"><span class="nav-icon">ℹ️</span>Tentang</a>
+  <a href="#bantuan" class="nav-item"><span class="nav-icon">💬</span>Bantuan</a>
 </div>
 
 </body>
-  </html>
+                                                                             </html>
+
 
 
 
